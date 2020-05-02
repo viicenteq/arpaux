@@ -1,39 +1,57 @@
-body {
- 
-    <style>
+
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;400;700&display=swap');
-</style>
-    background-color: #FADFC6;
-    color: #2E4053;
+*{
     margin: 0;
-
-
+    box-sizing: border-box;
 }
+
 body{
     font-family: 'Poppins', sans-serif;
 } 
 
-a {
-     
-    color: #000000;
+
+.wrapper {
+    display: grid;
+    grid-template-columns: 1fr 1 fr;
+    grid-gap: 4em;
+    width: 740px; 
+    margin: 0 auto ;         
+}
+header{
+    background-color: ##FBA85C
+    grid-column: span 2;
 }
 
-* {box-sizing: border-box;}
-.wrapper {
+header .herramientas {
+      width: 7040px
+        margin: 1 auto;
+    background-color: #7B86EE;
+    text-transform: uppercase;
+    padding: 1   ex 2ex;
+    color:gray;
+    
+}
+
+header .herramientas nav li{
+    display: inline-block;
+}
+ {
   max-width: 1440px;
   margin: 0 auto;
 }
-
-.wrapper > div {
+ 
+header {
+         width: 7040px
+        margin: 0 auto;
   border: 1px solid #;
-  border-radius: 5px;
+  border-radius: 0px;
   background-color: #FBA85C;
-  padding: 1em;
+  padding: 2em;
   color: ##ffffff;
 }.wrapper { 
   display: grid;
   grid-template-columns: repeat(3, 1fr);
-  grid-gap:20px;
+  grid-gap:20 px;
   grid-auto-rows: minmax(14px, auto);
 }
 .one {
@@ -41,19 +59,18 @@ a {
   grid-row: 1 /4;
 }
 .two {
-  grid-column: 1 /4;
+    grid-column: 1 /4;
   grid-row:   4/4;
 }
 
 .three {
   grid-column: 1 /4;
-  grid-row: 5 / 10;
+  grid-row: 5 / 18;
 }
 
 
-
-
 #grid {
+    background-color: #FBA85C
   width: 600px;
   display: grid;
   grid-template-areas: "a a";
@@ -67,7 +84,7 @@ h1{
      text-align;
     background-color: #7B86EE
     font-size: 14px;
-    padding: em;
+    padding: 0em;
     
 font-family: 'Poppins', sans-serif;
     /* margin-top: 50px; */
@@ -85,8 +102,8 @@ font-family: 'Poppins', sans-serif;
 
     margin-left: 20;
 }
-ol{
-    
+{
+
      text-align;
     background-color: #FADFC6;
     font-size: 17px;
@@ -114,7 +131,7 @@ p { background-color: #7B86EE;
     margin-left: 20
 }
 
-ul, ol{
+ul, 
     line-height: 1.5em;
 }
 
@@ -127,7 +144,7 @@ h1 {
 }
 
 h2, h3, h4{
-    margin-top: 1em;
+    margin-top: 4em;
 }
 
 .tagline a {
@@ -138,28 +155,7 @@ h2, h3, h4{
     font-size: 30%;
 }
 
-.toc ol {
-    background-color:rgba(0, 0, 0, .06);
-    padding: 1em 0;
-    border-radius: .5ex;
-}
 
-.toc ol li {
-    list-style-position: inside;
-    margin-left: 5em;
-}
-
-.toc ol li a {
-    text-decoration: none;
-    font-weight: 700;
-}
-
-#container {
-    margin: 3em auto;
-    width: 85%;
-    max-width: 600px;
-    /*text-shadow: 1px 1px 0 #343433;*/
-}
 
 footer {
     text-align: center;
